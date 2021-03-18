@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -22,7 +23,7 @@ spec:
     spec:
       containers:
       - name: eks-example
-        image: 845556015611.dkr.ecr.us-west-2.amazonaws.com/sourcerepo:latest
+        image: 845556015611.dkr.ecr.us-west-2.amazonaws.com/sourcerepo:e2e02ec6
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
